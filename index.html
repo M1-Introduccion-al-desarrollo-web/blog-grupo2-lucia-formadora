@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .header-blog {
+            background-image: url('assets/header_img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
+            color: white;
+        }
+
+        .header-blog img {
+            filter: invert(1);
+            width: 50px;
+            height: 50px;
+            
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            line-height: 1.8;
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+        
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .blog-post {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-blog {
+            flex-shrink: 0;
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .blog-content {
+            flex: 2;
+        }
+
+        .btn-blog {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-blog a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .btn-blog:hover {
+            background-color: #007bff;
+        }
+
+        footer {
+            background-color: #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+        
+    </style>
+    <title>Blog de Viaje</title>
+</head>
+<body>
+    <header class="header-blog">
+        <div class="header-content">
+            <img src="kevin/blog/assets/logo.png" alt="logo_blog_viaje">
+            <h1>Blog de Viaje</h1>
+        </div>
+    </header>
+    <main>
+        <ol class="blog-list">
+            <li class="blog-post">
+                <img src="assets/alemania_blog.jpg" alt="alemania_blog" class="img-blog">
+                <div class="blog-content">
+                    <h2>Alemania</h2>
+                    <p>
+                        Es un país de Europa Occidental con más de dos milenios de historia, cuyo paisaje incluye bosques,
+                        ríos, cordilleras y playas en el mar del Norte. La capital, Berlín, es un centro artístico y
+                        de vida nocturna, que alberga la puerta de Brandeburgo y muchos lugares relacionados con la
+                        Segunda Guerra Mundial...
+                        <button class="btn-blog">
+                            <a href="kevin/blog/pages/alemania/alemania.html">Saber más</a>
+                        </button>
+                    </p>
+                </div>
+        
+            </li>
+            <li class="blog-post">
+                <img src="assets/portaitalia.jpg" alt="italia" class="img-blog">
+                <div class="blog-content">
+                    <h2>Italia</h2> 
+                    <p>Famosa por su comida, pero aún más por su historia, arte y paisajes que quitan el aliento. Cada rincón de Italia guarda una historia que te sorprenderá...
+                        <button class="btn-blog">
+                            <a href="mikel/index.html" target="_blank">Saber más</a>
+                        </button>
+                    </p> 
+                </div>
+            </li>
+            <li class="blog-post">
+                <img src="assets/ind.jpg" alt="independence_square" class="img-blog">
+                <div class="blog-content">
+                    <h2>GHANA</h2>
+                    <p>Ghana, is a country on the West Coast of Africa, is one of the most thriving democracies on the continent. It has often been referred to as an “island of peace” in one of the most chaotic regions on earth. It shares boundaries with Togo to the east, Cote d’Ivoire to the west, Burkina Faso to the north and the Gulf of Guinea, to the south.
+                        <button class="btn-blog">
+                            <a href="mohammed/blog-mohammed19431-main/"> To know more:<a></a>
+                        </button>
+                    <p>
+                </div>   
+            </li>
+            <li class="blog-post">
+                <img src="./assets/bandera-de-grecia.jpg" alt="Grecia" class="img-blog">
+
+                <div class="blog-content">
+                <h2>Grecia</h2>
+                <p>
+                    Uno de los destinos más populares para viajar en Europa es Grecia. Un hermoso país con una historia fascinante y paisajes increíbles. ¡Además está llena de datos curiosos! 
+                    Es un país de Europa Meridional ubicado al sur de la península Balcánica, en el Mediterráneo.
+                    <button class="btn-blog">
+                        <a href="katerin/blog/grecia.html"> Saber más</a> 
+                    </button>
+                </p>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy;2025 Blog de viajes made by Kevin, Mohammed, Katerin and Mikel </p>
+    </footer>
+</body>
+</html>
